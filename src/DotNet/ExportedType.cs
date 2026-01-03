@@ -338,6 +338,11 @@ namespace dnlib.DotNet {
 		public bool IsExplicitLayout => ((TypeAttributes)attributes & TypeAttributes.LayoutMask) == TypeAttributes.ExplicitLayout;
 
 		/// <summary>
+		/// <c>true</c> if <see cref="TypeAttributes.ExtendedLayout"/> is set
+		/// </summary>
+		public bool IsExtendedLayout => ((TypeAttributes)attributes & TypeAttributes.LayoutMask) == TypeAttributes.ExtendedLayout;
+
+		/// <summary>
 		/// Gets/sets the <see cref="TypeAttributes.Interface"/> bit
 		/// </summary>
 		public bool IsInterface {

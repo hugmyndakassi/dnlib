@@ -35,6 +35,8 @@ namespace dnlib.DotNet {
 		SequentialLayout		= 0x00000008,
 		/// <summary>Layout is supplied explicitly</summary>
 		ExplicitLayout			= 0x00000010,
+		/// <summary>Layout is supplied via the System.Runtime.InteropServices.ExtendedLayoutAttribute</summary>
+		ExtendedLayout			= 0x00000018,
 
 		/// <summary>Use this mask to retrieve class semantics information.</summary>
 		ClassSemanticsMask		= 0x00000020,
